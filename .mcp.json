@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "prosta": {
+      "type": "http",
+      "url": "https://www.prosta.app/api/mcp"
+    }
+  }
+}

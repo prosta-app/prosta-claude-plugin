@@ -1,0 +1,16 @@
+{
+  "name": "prosta",
+  "displayName": "Prosta",
+  "version": "1.0.0",
+  "description": "Find Prosta businesses, services, professionals and available times. Connect your Prosta account to read your own appointments. Booking changes and binding quotes are unavailable.",
+  "license": "SEE LICENSE IN LICENSE",
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://github.com/prosta-app/prosta-claude-plugin/blob/main/PRIVACY.md",
+  "homepage": "https://www.prosta.app",
+  "repository": "https://github.com/prosta-app/prosta-claude-plugin",
+  "author": {
+    "name": "Prosta",
+    "email": "support@prosta.uz",
+    "url": "https://www.prosta.app"
+  }
+}
