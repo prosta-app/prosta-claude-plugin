@@ -1,6 +1,6 @@
-# Privacy for the Prosta Claude connector — 1.1.1
+# Privacy for the Prosta Claude connector — 1.1.2
 
-This notice describes the Prosta 1.1.1 Claude integration alongside the
+This notice describes the Prosta 1.1.2 Claude integration alongside the
 [Prosta privacy policy](https://www.prosta.app/privacy) and
 [terms](https://www.prosta.app/terms). It governs the connector-specific sharing
 and additional AI-host recipient described here. It does not change the separate

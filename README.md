@@ -1,6 +1,6 @@
 ![Prosta](./assets/prosta-icon.svg)
 
-# Prosta for Claude — 1.1.1
+# Prosta for Claude — 1.1.2
 
 Discover Prosta businesses, services, professionals and available times, and
 read your own current and past appointments with your existing Prosta account.
@@ -65,7 +65,7 @@ current appointments again to see later cancellations or rescheduling.
 
 Products, packages, deposits, payments and reference photos require normal
 Prosta flows. Existing private appointment notes are not exported. For an edit, omit notes to
-preserve them, send explicit new text to replace them, or null to clear them
+preserve them, send explicit new text to replace them, or an explicit empty string to clear them
 only when you request removal and the live schema permits it. Include
 optional new notes or a cancellation reason only when needed, and avoid medical
 or other unnecessary private details in chat.
@@ -105,6 +105,6 @@ public issues. The official distribution repository is
 [prosta-app/prosta-claude-plugin](https://github.com/prosta-app/prosta-claude-plugin).
 
 The [LICENSE](./LICENSE) preserves the original proprietary notice and adds
-limited permission for this exact Claude 1.1.1 package, named files and genuine
+limited permission for this exact Claude 1.1.2 package, named files and genuine
 Prosta artwork. It grants no rights to the private monorepo or separate OpenAI
 release. The package contains no local executable, lifecycle hook or secret.

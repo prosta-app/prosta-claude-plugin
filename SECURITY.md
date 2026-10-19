@@ -1,4 +1,4 @@
-# Security for the Prosta Claude connector — 1.1.1
+# Security for the Prosta Claude connector — 1.1.2
 
 Report concerns privately to [Prosta Support](https://www.prosta.app/support)
 with the integration, approximate time and minimal sanitized reproduction. Never
@@ -62,5 +62,5 @@ Local package validation and a stable version number are not hosted acceptance
 or directory approval. The release process records deployment, fresh consent,
 ownership, personal approval, retries, conflicts, notifications and realtime
 checks separately. The [LICENSE](./LICENSE) grants distribution only for the
-specified genuine Claude 1.1.1 package; private source and customer data remain
+specified genuine Claude 1.1.2 package; private source and customer data remain
 excluded.

@@ -5,12 +5,16 @@ description: Discover Prosta services, read your appointments and, when the serv
 
 # Prosta appointments and booking actions
 
-This is the Claude 1.1.1 workflow. Use only tools advertised by the connected
+This is the shared Prosta 1.1.2 workflow for ChatGPT, Codex and Claude. Use only tools advertised by the connected
 server. The full eleven-tool capability set combines seven reads with four
 gated proposal/status tools. Installing this package does not establish enabled
 capabilities, deployment, host acceptance or directory approval. If an action
 tool is absent, explain the limitation and offer a validated normal Prosta link.
 Never invent a tool, change a gate, call a private API or automate approval.
+
+Follow the user’s explicit task choices and preferences over workflow
+recommendations here. Live API authorization, account ownership and personal
+Prosta approval remain enforced product boundaries.
 
 While action tools are absent, do not request write consent, collect proposal
 notes or cancellation reasons, or suggest an approval page exists. Missing tools
@@ -19,8 +23,8 @@ and the verified Prosta account. Preparation cannot change an appointment;
 the customer must personally approve the exact proposal on Prosta.
 
 For an appointment edit, omitted notes preserve existing notes without exposing
-them. Explicit new notes replace them; null clears them only when the customer
-requests removal and the live schema permits it. Do not send an internal
+them. Explicit new notes replace them; an empty string clears them only when the
+customer requests removal. Null is not a valid notes input in this release. Do not send an internal
 notesChange field: the server derives that intent. Resolve professional and
 service identifiers from returned data, and retain unchanged choices unless
 the customer requests a change. Report only returned appointment status; there
@@ -60,8 +64,10 @@ to choose an appointment; another customer's identifier is not authority.
 ## Discover and select
 
 Ask for only missing choices needed for the request. Search using supported
-name/category fields. Nearby search may use a coarse city hint supplied by the
-host's controlled metadata; it is optional and is not GPS. Check returned
+name/category fields. Set nearby=true only for nearby intent; otherwise omit it
+or use false, including named-business and other-city searches. Nearby search
+may use a coarse city hint supplied by the host’s controlled metadata; it is
+optional and is not GPS. Never send a raw location field. Check returned
 addresses against the customer's area. Do not invent city filters or claim
 nearby results without evidence. If necessary, use a returned Prosta discovery
 link and explain the location uncertainty.

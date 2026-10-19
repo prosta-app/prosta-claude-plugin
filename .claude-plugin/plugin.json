@@ -1,7 +1,7 @@
 {
   "name": "prosta",
   "displayName": "Prosta",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Discover Prosta services, availability and your appointments. When the server enables booking actions, prepare creation, edits or cancellation for your personal approval on Prosta, then check the result and current appointment status.",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "./.claude-plugin/icon.png",
