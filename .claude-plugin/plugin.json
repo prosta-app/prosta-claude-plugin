@@ -1,8 +1,8 @@
 {
   "name": "prosta",
   "displayName": "Prosta",
-  "version": "1.1.0",
-  "description": "Discover Prosta services and availability and read your appointments. Booking changes are currently unavailable. When the server enables proposal tools, you personally review and approve each exact change on Prosta.",
+  "version": "1.1.1",
+  "description": "Discover Prosta services, availability and your appointments. When the server enables booking actions, prepare creation, edits or cancellation for your personal approval on Prosta, then check the result and current appointment status.",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "./.claude-plugin/icon.png",
   "homepage": "https://www.prosta.app",

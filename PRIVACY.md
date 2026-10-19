@@ -1,15 +1,15 @@
-# Privacy for the Prosta Claude connector — 1.1.0
+# Privacy for the Prosta Claude connector — 1.1.1
 
-This notice describes the Prosta 1.1.0 Claude integration alongside the
+This notice describes the Prosta 1.1.1 Claude integration alongside the
 [Prosta privacy policy](https://www.prosta.app/privacy) and
 [terms](https://www.prosta.app/terms). It governs the connector-specific sharing
 and additional AI-host recipient described here. It does not change the separate
 OpenAI package or the scope of the earlier read-only 1.0.0 package.
 
-The current service exposes seven read tools. Booking actions are disabled.
-The proposal-specific processing below applies only after the server enables
-those tools and you give the required fresh consent. This notice does not
-activate that processing or claim authenticated host testing is complete.
+The connected server controls which tools are available. Proposal-specific
+processing applies only when those tools are enabled and you give the required
+fresh consent. This notice does not activate processing or claim authenticated
+host testing is complete.
 
 ## What is shared and why
 

@@ -1,26 +1,30 @@
 ---
 name: prosta-booking-actions
-description: Discover Prosta services and availability and read your own appointments. Use proposal guidance only when the server advertises those tools; booking changes are currently unavailable.
+description: Discover Prosta services, read your appointments and, when the server enables them, prepare creation, edits or cancellation for personal approval on Prosta. Check action results and current appointment status.
 ---
 
 # Prosta appointments and booking actions
 
-This is the Claude 1.1.0 workflow. Use only tools actually advertised by the
-connected server. Currently the service exposes seven read tools and booking
-changes are unavailable. The four proposal/status tools require the coordinated server
-release and its booking-actions gate. Installing the package is not evidence of
-deployment, host acceptance or directory approval. If the action tools are
-absent, explain the limitation and offer a validated normal Prosta link. Never
-invent a tool, change a gate, call a private API, or run an approval action through
-another integration to bypass these boundaries.
+This is the Claude 1.1.1 workflow. Use only tools advertised by the connected
+server. The full eleven-tool capability set combines seven reads with four
+gated proposal/status tools. Installing this package does not establish enabled
+capabilities, deployment, host acceptance or directory approval. If an action
+tool is absent, explain the limitation and offer a validated normal Prosta link.
+Never invent a tool, change a gate, call a private API or automate approval.
 
-While those tools are absent, use only discovery and own-appointment reads below.
-Do not request write consent, ask for booking notes or a cancellation reason,
-generate a proposal request, or suggest that a Prosta approval page is available.
-The preparation, approval and action-status sections apply only after the server
-advertises the corresponding tools. Missing tools are not a temporary error to
-retry. The live schemas and verified Prosta account remain authoritative.
+While action tools are absent, do not request write consent, collect proposal
+notes or cancellation reasons, or suggest an approval page exists. Missing tools
+are not a temporary error to retry. When tools are present, use the live schemas
+and the verified Prosta account. Preparation cannot change an appointment;
+the customer must personally approve the exact proposal on Prosta.
 
+For an appointment edit, omitted notes preserve existing notes without exposing
+them. Explicit new notes replace them; null clears them only when the customer
+requests removal and the live schema permits it. Do not send an internal
+notesChange field: the server derives that intent. Resolve professional and
+service identifiers from returned data, and retain unchanged choices unless
+the customer requests a change. Report only returned appointment status; there
+is no general administrator status-write tool.
 
 ## Available tool contracts
 

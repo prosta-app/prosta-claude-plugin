@@ -1,4 +1,4 @@
-# Security for the Prosta Claude connector — 1.1.0
+# Security for the Prosta Claude connector — 1.1.1
 
 Report concerns privately to [Prosta Support](https://www.prosta.app/support)
 with the integration, approximate time and minimal sanitized reproduction. Never
@@ -13,8 +13,8 @@ credential or separate booking database. Its only server resource is
 https://www.prosta.app/api/mcp. Package installation does not deploy the service,
 enable booking actions or prove host/directory approval.
 
-The current service exposes seven read tools with booking actions disabled.
-Proposal and first-party approval guidance below applies only when the matching
+The connected server controls available capabilities. Proposal and first-party
+approval guidance below applies only when the matching
 server tools and approval page are enabled. While absent, do not request write
 consent, collect proposal notes or attempt an alternative mutation endpoint.
 
@@ -62,5 +62,5 @@ Local package validation and a stable version number are not hosted acceptance
 or directory approval. The release process records deployment, fresh consent,
 ownership, personal approval, retries, conflicts, notifications and realtime
 checks separately. The [LICENSE](./LICENSE) grants distribution only for the
-specified genuine Claude 1.1.0 package; private source and customer data remain
+specified genuine Claude 1.1.1 package; private source and customer data remain
 excluded.

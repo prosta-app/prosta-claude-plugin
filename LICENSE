@@ -19,11 +19,11 @@ prosta.app — https://prosta.app
 
 ---
 
-Limited Claude Package Distribution Permission — Prosta 1.1.0
+Limited Claude Package Distribution Permission — Prosta 1.1.1
 
 Following the Prosta owner's request to deploy the Claude plugin and MCP update
-on 2026-10-18, Prosta grants the following limited permission for its genuine
-Prosta 1.1.0 customer-booking Claude connector package for
+on 2026-10-19, Prosta grants the following limited permission for its genuine
+Prosta 1.1.1 customer-booking Claude connector package for
 https://www.prosta.app/api/mcp. This supplement prevails over the preceding
 proprietary license's restrictions only to the extent expressly stated below.
 All other restrictions and reserved rights remain unchanged.
@@ -46,9 +46,9 @@ with distributed copies.
 
 The package and artwork remain proprietary. This is not an open-source license
 or a general permission to modify, sublicense or redistribute Prosta materials.
-This supplement covers only the exact Claude 1.1.0 package and listed files; it
+This supplement covers only the exact Claude 1.1.1 package and listed files; it
 does not expand any OpenAI permission, authorize another release or establish
-Anthropic approval or marketplace acceptance. Existing 1.0.0 grants are unchanged.
+Anthropic approval or marketplace acceptance. Existing 1.0.0 and 1.1.0 grants are unchanged.
 
 This permission excludes Prosta's private monorepo, application source, frontend,
 mobile app, backend, database schema or data, customer information, credentials,

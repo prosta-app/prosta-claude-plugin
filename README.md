@@ -1,18 +1,19 @@
 ![Prosta](./assets/prosta-icon.svg)
 
-# Prosta for Claude — 1.1.0
+# Prosta for Claude — 1.1.1
 
-This 1.1.0 instruction package works with the currently available seven read
-tools. Booking, rescheduling and cancellation are currently unavailable through
-the connector. The package does not establish that booking actions are live.
-Proposal guidance below applies only when the coordinated MCP and Prosta
-approval-page release is deployed and the server advertises those tools.
+Discover Prosta businesses, services, professionals and available times, and
+read your own current and past appointments with your existing Prosta account.
+When the connected server advertises booking actions, prepare a new booking,
+change its time, professional, services or notes, or prepare cancellation.
+Every change requires your personal review and approval on Prosta. You can
+then check the action result and fetch the current appointment status.
 
-Find Prosta businesses, services, professionals and available times. Connect your
-existing Prosta account to read current and past appointments. Use your normal
-Prosta booking screens for changes while connector actions are unavailable.
-The integration uses your regular Prosta account and appointments. There is no
-separate AI booking account or database.
+The full capability set has eleven tools: five public discovery reads, two
+own-appointment reads and four gated proposal/status tools. Use the live catalog
+as the source of available capabilities. If an action tool is absent, use the
+normal Prosta booking screens; installing this package does not enable it.
+There is no separate AI booking account or appointment database.
 
 This repository contains the Claude integration package. The package itself
 does not deploy the service, enable server capabilities, or establish directory
@@ -63,11 +64,13 @@ refreshes missed changes. Old chat messages do not update themselves. Fetch
 current appointments again to see later cancellations or rescheduling.
 
 Products, packages, deposits, payments and reference photos require normal
-Prosta flows. Existing private appointment notes are not exported. Include
+Prosta flows. Existing private appointment notes are not exported. For an edit, omit notes to
+preserve them, send explicit new text to replace them, or null to clear them
+only when you request removal and the live schema permits it. Include
 optional new notes or a cancellation reason only when needed, and avoid medical
 or other unnecessary private details in chat.
 
-## Read examples for the current service
+## Read examples
 
 - “Find up to five salons on Prosta and show their public addresses.”
 - “Show my current and past Prosta appointments after I connect my Prosta account.”
@@ -79,10 +82,10 @@ be empty, and errors must be reported accurately. These examples describe
 supported requests, not recorded authenticated host tests. Public discovery
 does not require appointment access.
 
-## Proposal examples for when the tools become available
+## Proposal examples when the tools are available
 
 - “Find a Prosta service and prepare a booking for me to review on Prosta.”
-- “Show my appointments and prepare a reschedule of one I choose; I will approve it on Prosta.”
+- “Prepare a change to my selected appointment’s professional, services or notes; I will review it on Prosta.”
 - “Prepare cancellation of my selected appointment and let me review it before anything changes.”
 
 These conditional examples are not available while booking actions are disabled
@@ -102,6 +105,6 @@ public issues. The official distribution repository is
 [prosta-app/prosta-claude-plugin](https://github.com/prosta-app/prosta-claude-plugin).
 
 The [LICENSE](./LICENSE) preserves the original proprietary notice and adds
-limited permission for this exact Claude 1.1.0 package, named files and genuine
+limited permission for this exact Claude 1.1.1 package, named files and genuine
 Prosta artwork. It grants no rights to the private monorepo or separate OpenAI
 release. The package contains no local executable, lifecycle hook or secret.
